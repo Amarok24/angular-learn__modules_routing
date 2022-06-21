@@ -1,0 +1,12 @@
+:host {
+  color: #303030;
+}
+
+
+.nav-link {
+  color: grey;
+  
+  &.active {
+    font-weight: bold;
+  }
+}

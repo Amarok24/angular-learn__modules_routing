@@ -1,0 +1,22 @@
+// The folder with both files was created through CLI command:
+// ng g m elements --routing  (ng generate module elements --routing)
+
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+import { ElementsRoutingModule } from './elements-routing.module';
+import { ElementsHomeComponent } from './elements-home/elements-home.component';
+
+export { ElementsModule };
+
+@NgModule({
+  declarations: [
+    ElementsHomeComponent
+  ],
+  imports: [
+    CommonModule,
+    ElementsRoutingModule
+  ],
+  exports: [ ]
+})
+class ElementsModule { }

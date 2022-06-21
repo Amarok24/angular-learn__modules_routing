@@ -1,0 +1,41 @@
+<div class="container bg-light rounded p-3">
+
+  <!-- The following works technically but forces to reload the whole page
+
+  <a href="/collections">Show collections</a>
+
+  so the Angular way of using routes is by replacing href with routerLink
+-->
+
+
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <!-- The following element will always get "active" CSS class because it matches all pages (???) -->
+    <a routerLink="" routerLinkActive="active" class="nav-link">Home</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/collections" routerLinkActive="active" class="nav-link">Show
+      collections</a>
+  </li>
+  <li class="nav-item">
+    <a routerLink="/elements" routerLinkActive="active" class="nav-link">Show
+      elements</a>
+  </li>
+</ul>
+
+  <section class="p-3">
+
+  <!-- The following code has been automatically added by ng because we added routing.
+Inside of this element all routing stuff will be rendered on demand. -->
+  <router-outlet></router-outlet>
+
+
+</section>
+
+  <footer class="p-3 bg-success text-light">
+    <!-- footer-info does not use routing -->
+    <app-footer-info></app-footer-info>
+
+  </footer>
+
+</div>
